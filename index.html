@@ -1,162 +1,91 @@
 <!DOCTYPE html>
-<html oncontextmenu="self.event.returnValue=false" onselectstart="return false">
-<head>
+<html  oncontextmenu=self.event.returnValue=false onselectstart="return false">
+<head oncontextmenu=self.event.returnValue=false onselectstart="return false">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>TuHome</title>
-    
-    <!-- 内联 CSS 样式 -->
-    <style>
-        /* 基础重置 */
-        body {
-            margin: 0;
-            padding: 0;
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-            background-color: #e0e0e0;
-        }
-
-        /* 卡片主体容器 */
-        #index_card {
-            width: 85%;
-            max-width: 750px;
-            margin: 120px auto 50px auto;
-            background: linear-gradient(135deg, #2ecc71 0%, #3498db 100%); /* 渐变蓝绿背景 */
-            border-radius: 15px;
-            padding: 40px 20px 20px 20px;
-            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
-            position: relative;
-        }
-
-        /* 【核心优化】头像样式 */
-        #geekbao {
-            display: block;
-            width: 150px;              /* 尺寸 */
-            height: 150px;             /* 保持正方形 */
-            border-radius: 50%;        /* 变为正圆形 */
-            border: 6px solid #ffffff; /* 白色边框与背景融合 */
-            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2); /* 悬浮投影 */
-            object-fit: cover;         /* 图片不拉伸 */
-            background-color: #fff;    /* 图片内部的底色（防止透明） */
-            margin: -105px auto 10px auto; /* 向上拉出卡片上方，并用 auto 居中 */
-            position: relative;
-            z-index: 10;
-        }
-
-        /* 按钮容器 */
-        .buttones {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            gap: 15px;
-            margin-top: 30px;
-        }
-
-        /* 按钮美化 */
-        .button_1 {
-            background: rgba(255, 255, 255, 0.2);
-            border: none;
-            padding: 15px 25px;
-            border-radius: 10px;
-            color: #222;
-            cursor: pointer;
-            min-width: 130px;
-            backdrop-filter: blur(5px);
-            transition: all 0.3s ease;
-        }
-        .button_1:hover {
-            background: rgba(255, 255, 255, 0.4);
-            transform: translateY(-2px);
-            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-        }
-        .button_1 b { font-weight: 400; }
-
-        /* 图标占用 */
-        #icons { margin-top: 15px; margin-bottom: 0; }
-        .iconfont { font-size: 26px; margin: 0 5px; }
-    </style>
-
     <script type="text/javascript" src="source/js/header.js"></script>
+    <title>TuHome</title>
 </head>
 <body>
     <div class="change" id="index_card">
+        <center><img class="change" id="geekbao" style="width:160px;margin-top:-50px;" src="source/img/geekbao.png"><br>
+        <b style="font-weight: 300;font-size:200%;">公众号【极客豹】</b><br>
+        <b><span style="font-weight: 300;" class="text-muted text-xs block">
+        <div id="chakhsu"></div> 
+        <script> var chakhsu = function (r) {
+        function t() {
+            return b[Math.floor(Math.random() * b.length)]} 
+        function e() {
+            return String.fromCharCode(94 * Math.random() + 33)
+        } 
+        function n(r) {
+            for (var n = document.createDocumentFragment(), i = 0; r > i; i++) { 
+                var l = document.createElement("span"); 
+                l.textContent = e(), l.style.color = t(), n.appendChild(l) 
+        } 
+        return n
+        }
+        function i() {
+            var t = o[c.skillI]; 
+            c.step ? c.step-- : (c.step = g, c.prefixP < l.length ? 
+            (c.prefixP >= 0 && (c.text += l[c.prefixP]), c.prefixP++) : "forward" === c.direction ?                 c.skillP < t.length ? (c.text += t[c.skillP], c.skillP++) : c.delay ? 
+        c.delay-- : (c.direction = "backward", c.delay = a) : c.skillP > 0 ? 
+        (c.text = c.text.slice(0, -1), c.skillP--) : (c.skillI = (c.skillI + 1) % o.length, c.direction = "forward")), r.textContent = c.text, r.appendChild(n(c.prefixP < l.length ? 
+        Math.min(s, s + c.prefixP) : Math.min(s, t.length - c.skillP))), setTimeout(i, d) 
+        }  
+        var l = "", o = ["简洁、轻快、美观" ].map(function (r) {return r + ""}), a = 2, g = 1, s = 5, d = 75, b = ["rgb(110,64,170)", "rgb(150,61,179)", "rgb(191,60,175)", "rgb(228,65,157)", "rgb(254,75,131)", "rgb(255,94,99)", "rgb(255,120,71)", "rgb(251,150,51)", "rgb(226,183,47)", "rgb(198,214,60)", "rgb(175,240,91)", "rgb(127,246,88)", "rgb(82,246,103)", "rgb(48,239,130)", "rgb(29,223,163)", "rgb(26,199,194)", "rgb(35,171,216)", "rgb(54,140,225)", "rgb(76,110,219)", "rgb(96,84,200)"], c = {text: "", prefixP: -s, skillI: 0, skillP: 0, direction: "forward", delay: a, step: g}; 
+        i() }; 
+    chakhsu(document.getElementById('chakhsu')); 
+    </script>
+            
+            
+            
+        <p class="change" id="icons">
+            <a href="https://github.com/ye-tutu/TuHome" target="_blank" rel="noopener"><i class="iconfont icongithub"></i></a>&nbsp;
+            <a href="https://gitee.com/ye-tutu/TuHome" target="_blank" rel="noopener"><i style="color:#99453c;" class="iconfont icongitee"></i></a>&nbsp;
+            <a href="https://space.bilibili.com/498959589" target="_blank" rel="noopener"><i style="color:#d63e6c;" class="iconfont iconbilibili1"></i></a>&nbsp;
+            <a href="https://twitter.com/jz_tutu" target="_blank" rel="noopener"><i style="color:#1b9ff1;" class="iconfont icontwitter"></i></a>&nbsp;
+        </p>
+        </center>
         <center>
-            <!-- 移除了原本的内联 style，应用了上方 CSS -->
-            <img class="change" id="geekbao" src="source/img/geekbao.png"><br>
-            
-            <b style="font-weight: 300;font-size:200%;color:#222;">公众号【极客豹】</b><br>
-            <b><span style="font-weight: 300;" class="text-muted text-xs block">
-                <div id="chakhsu"></div> 
-                <script> 
-                    var chakhsu = function (r) {
-                        function t() { return b[Math.floor(Math.random() * b.length)]; } 
-                        function e() { return String.fromCharCode(94 * Math.random() + 33); } 
-                        function n(r) {
-                            for (var n = document.createDocumentFragment(), i = 0; r > i; i++) { 
-                                var l = document.createElement("span"); 
-                                l.textContent = e(), l.style.color = t(), n.appendChild(l); 
-                            } 
-                            return n;
-                        }
-                        function i() {
-                            var t = o[c.skillI]; 
-                            c.step ? c.step-- : (c.step = g, c.prefixP < l.length ? 
-                            (c.prefixP >= 0 && (c.text += l[c.prefixP]), c.prefixP++) : "forward" === c.direction ?                 c.skillP < t.length ? (c.text += t[c.skillP], c.skillP++) : c.delay ? 
-                            c.delay-- : (c.direction = "backward", c.delay = a) : c.skillP > 0 ? 
-                            (c.text = c.text.slice(0, -1), c.skillP--) : (c.skillI = (c.skillI + 1) % o.length, c.direction = "forward")), r.textContent = c.text, r.appendChild(n(c.prefixP < l.length ? 
-                            Math.min(s, s + c.prefixP) : Math.min(s, t.length - c.skillP))), setTimeout(i, d); 
-                        }  
-                        var l = "", o = ["简洁、轻快、美观" ].map(function (r) {return r + ""}), a = 2, g = 1, s = 5, d = 75, b = ["rgb(110,64,170)", "rgb(150,61,179)", "rgb(191,60,175)", "rgb(228,65,157)", "rgb(254,75,131)", "rgb(255,94,99)", "rgb(255,120,71)", "rgb(251,150,51)", "rgb(226,183,47)", "rgb(198,214,60)", "rgb(175,240,91)", "rgb(127,246,88)", "rgb(82,246,103)", "rgb(48,239,130)", "rgb(29,223,163)", "rgb(26,199,194)", "rgb(35,171,216)", "rgb(54,140,225)", "rgb(76,110,219)", "rgb(96,84,200)"], c = {text: "", prefixP: -s, skillI: 0, skillP: 0, direction: "forward", delay: a, step: g}; 
-                        i() 
-                    }; 
-                    chakhsu(document.getElementById('chakhsu')); 
-                </script>
-                
-                <p class="change" id="icons">
-                    <a href="https://github.com/ye-tutu/TuHome" target="_blank" rel="noopener"><i class="iconfont icongithub"></i></a>&nbsp;
-                    <a href="https://gitee.com/ye-tutu/TuHome" target="_blank" rel="noopener"><i style="color:#99453c;" class="iconfont icongitee"></i></a>&nbsp;
-                    <a href="https://space.bilibili.com/498959589" target="_blank" rel="noopener"><i style="color:#d63e6c;" class="iconfont iconbilibili1"></i></a>&nbsp;
-                    <a href="https://twitter.com/jz_tutu" target="_blank" rel="noopener"><i style="color:#1b9ff1;" class="iconfont icontwitter"></i></a>&nbsp;
-                </p>
-            </center>
-            
-            <center>
-                <div class="buttones">
-                    <a href="https://zyz.jikefuye.cn/" target="_blank" rel="noopener">
-                        <button class="button_1">
-                            <b style="font-size:15px;">极客资源站</b><br>Blog
-                        </button>
-                    </a>
-                    <a href="https://mp.weixin.qq.com/s/5gisOHCIGUdWcfbOHFDvRQ" target="_blank">
-                        <button class="button_1">
-                            <b style="font-size:15px;">关注公众号</b><br>Home
-                        </button>
-                    </a>
-                    <a href="https://qcnzexy0x2bq.feishu.cn/wiki/SZ6Zw2PVAilOUxkpTZGc1yosnzd?from=from_copylink">
-                        <button class="button_1">
-                            <b style="font-size:15px;">极客知识库</b><br>Project
-                        </button>
-                    </a>
-                    <a href="https://zyz.jikefuye.cn/129967.html">
-                        <button class="button_1">
-                            <b style="font-size:15px;">极客资源圈</b><br>Notes
-                        </button>
-                    </a>
-                    <a href="https://jikefuye.cn">
-                        <button class="button_1">
-                            <b style="font-size:15px;">极客副业站</b><br>Say
-                        </button>
-                    </a>
-                    <a href="https://link3.cc/geekcp" target="_blank" rel="noopener">
-                        <button class="button_1">
-                            <b style="font-size:15px;">更多内容</b><br>Github
-                        </button>
-                    </a>
-                </div>
-            </center>
+        <div class="buttones">
+            <a href="https://zyz.jikefuye.cn/" target="_blank" rel="noopener">
+                <button class="button_1">
+                    <b style="font-size:15px;font-weight: 300;">极客资源站</b><br>Blog
+                </button>
+            </a>
+            <a href="https://mp.weixin.qq.com/s/5gisOHCIGUdWcfbOHFDvRQ" target="_blank">
+                <button class="button_1">
+                    <b style="font-size:15px;font-weight: 300;">关注公众号</b><br>Home
+                </button>
+            </a>
+            <a href="https://qcnzexy0x2bq.feishu.cn/wiki/SZ6Zw2PVAilOUxkpTZGc1yosnzd?from=from_copylink">
+                <button class="button_1">
+                    <b style="font-size:15px;font-weight: 300;">极客知识库</b><br>Project
+                </button>
+            </a>
+            <a href="https://zyz.jikefuye.cn/129967.html">
+                <button class="button_1">
+                    <b style="font-size:15px;font-weight: 300;">极客资源圈</b><br>Notes
+                </button>
+            </a>
+            <a href="https://jikefuye.cn">
+                <button class="button_1">
+                    <b style="font-size:15px;font-weight: 300;">极客副业站</b><br>Say
+                </button>
+            </a>
+            <a href="https://link3.cc/geekcp" target="_blank" rel="noopener">
+                <button class="button_1">
+                    <b style="font-size:15px;font-weight: 300;">更多内容</b><br>Github
+                </button>
+            </a>
         </div>
-        
-        <footer id="footer">
-            <script type="text/javascript" src="source/js/footer.js"></script>
-        </footer>
-    </body>
-    </html>
+        </center>
+    </div>
+    <footer id="footer">
+        <script type="text/javascript" src="source/js/footer.js"></script>
+    </footer>
+
+</body>
+
+</html>
