@@ -121,16 +121,16 @@ body {
     border-radius: 8px;
 } */
 
-#geekbao{
+#favorite{
     transition: 0.7s;
     border-radius: 50%;
     -webkit-border-radius: 50%;
 }
 
-#index_card:hover #geekbao{
+#index_card:hover #favorite{
     transform:rotate(360deg);
 }
-#geekbao:hover{
+#favorite:hover{
     transform:rotate(360deg);
 }
 
